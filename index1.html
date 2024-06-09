@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Imagen con borde al hacer clic</title>
+</head>
+<body>
+    <img id="imagen1" src="./assets/img/wooden-bridge-koh-nangyuan-island-surat-thani-thailand.jpg" alt="imagen-con-borde">
+    <button onclick="
+        var element = document.querySelector('#imagen1');
+        element.style.border='2px solid red';
+    ">Agregar Borde</button>
+     <button onclick="
+     var element = document.querySelector('#imagen1');
+     element.style.border='none';
+ ">Quitar Borde</button>
+</body>
+</html>

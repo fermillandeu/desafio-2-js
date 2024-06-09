@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Password</title>
+</head>
+<body>
+    <h1>Verificación de Password</h1>
+    <select id="password1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <select id="password2">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <select id="password3">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <button onclick="document.getElementById('resultado').innerText = (document.getElementById('password1').value + document.getElementById('password2').value + document.getElementById('password3').value) === '911' ? 'Password 1 correcto' : ((document.getElementById('password1').value + document.getElementById('password2').value + document.getElementById('password3').value) === '714' ? 'Password 2 correcto' : 'Password incorrecto')">Ingresar</button>
+    <p id="resultado"></p>
+</body>
+</html>
